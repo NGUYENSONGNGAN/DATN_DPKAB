@@ -6,14 +6,16 @@ import { calculateTotals } from './features/cartSlice';
 import Modal from './Modal';
 
 function Cart() {
- /*  const { cartItem } = useSelector((store) => store.cart);
+  /*  const { cartItem } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(calculateTotals());
   }, [cartItem]); */
+  const { isOpen } = useSelector((store) => store.modal);
   return (
     <>
-       <Modal />
+      {isOpen && <Modal />}
+
       <NavCart />
       <CartContainer />
     </>

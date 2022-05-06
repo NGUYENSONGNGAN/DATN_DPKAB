@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronDown, ChevronUp } from './icons';
-import './CartItem.css';
+import './styles.css';
 import { useDispatch } from 'react-redux';
 import { removeItem, increase, decrease } from './features/cartSlice';
 
@@ -25,7 +25,7 @@ function CartItem(cartItem) {
         <button
           className="amount-btn"
           onClick={() => {
-             dispatch(increase(cartItem.MaSanPham));
+            dispatch(increase(cartItem.MaSanPham));
           }}
         >
           <ChevronUp />
