@@ -1,0 +1,59 @@
+
+  #menu {
+    display: flex;
+    width: 1600px;
+    margin: 15px auto;
+
+    .box_container {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .box {
+        width: calc(100%/5.5);
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: left;
+        border: .1rem solid rgba(0, 0, 0, 0.2);
+        margin: 10px 5px;
+        cursor: pointer;
+
+        .btn {
+          margin-top: 15px;
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 600;
+          color: black;
+          background: #ffcad4;
+          border-radius: 8px;
+          cursor: pointer;
+          padding: 8px 10px;
+        }
+        .btn:hover{ letter-spacing: 3px;}
+        h3
+        {
+          height: 45px;
+          overflow: hidden;
+        }
+        .price
+        {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          color: #666;
+          
+        }
+      }
+      .box:hover
+      {
+
+      }
+    }
+  }
