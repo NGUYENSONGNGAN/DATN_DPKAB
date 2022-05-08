@@ -6,7 +6,6 @@ const initialState = {
   total: 0,
   isLoading: true,
 };
-
 const cartSlice = createSlice({
   name: 'cart',
   initialState,
@@ -29,19 +28,22 @@ const cartSlice = createSlice({
       const cartItem = state.cartIterm.find((item) => item.MaSanPham === itemId);
       cartItem.SoLuong = cartItem.SoLuong - 1;
     },
-    /* calculateTotals: (state) => {
+    calculateTotals: (state) => {
       let amount = 0;
       let total = 0;
       console.log(state.cartItem);
-      state.cartItem.forEach((item) => {
-        amount += item.donGiaMoi;
+      state.cartIterm.forEach((item) => {
+        amount += item.SoLuong;
         total += item.donGiaMoi * item.SoLuong;
       });
       state.amount = amount;
       state.total = total;
-    }, */
+    },
   },
 });
+
+//SELECTOR
+export const increaseNumbrSelector = (state) => state;
 
 /* console.log(cartSlice) */
 export const { clearCart, removeItem, increase, decrease, calculateTotals } = cartSlice.actions;

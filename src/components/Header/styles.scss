@@ -18,16 +18,7 @@ body {
   padding-bottom: 10px;
 }
 
-/* .container
-{
-    width: 1200px ;
-    margin: 0px auto;
-} */
 .header_container {
-  width: 1600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
@@ -103,7 +94,6 @@ body {
 }
 
 .nav-tabs {
-  width: 1600px;
   position: relative;
 
   margin-left: auto;
@@ -190,17 +180,11 @@ a.nav {
   text-transform: uppercase;
   font-weight: 600;
 }
-.nav-tabs-headers {
-  max-width: 1600px;
-  margin: 0 auto;
-}
 .nav-tabs-headers-menu {
   gap: 50px;
   margin-bottom: 15px;
 }
 .list-menu {
-  max-width: 1600px;
-  margin: 0 auto;
   gap: 25px;
 
   .menu-item {

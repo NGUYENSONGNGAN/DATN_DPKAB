@@ -1,52 +1,50 @@
 import React from 'react';
 import './styles.scss';
-import { Menu, Dropdown, Space } from 'antd';
+import { Menu, Dropdown, Space, Checkbox, Row, Col } from 'antd';
 import { DownOutlined, SmileOutlined } from '@ant-design/icons';
 
 const FilterProducts = () => {
-  const menu = (
-    <Menu
-      items={[
-        {
-          label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-              1st menu item
-            </a>
-          ),
-        },
-        {
-          label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-              2nd menu item (disabled)
-            </a>
-          ),
-          icon: <SmileOutlined />,
-          disabled: true,
-        },
-        {
-          label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-              3rd menu item (disabled)
-            </a>
-          ),
-          disabled: true,
-        },
-        {
-          danger: true,
-          label: 'a danger item',
-        },
-      ]}
-    />
+  function onChange(checkedValues) {
+    console.log('checked = ', checkedValues);
+  }
+  const danhmuc = (
+    <div className="list-dropdown">
+      <Checkbox.Group className="list-dropdown-group" style={{ width: '100%' }} onChange={onChange}>
+        <Checkbox value="A">A</Checkbox>
+        <Checkbox value="B">B</Checkbox>
+        <Checkbox value="C">C</Checkbox>
+        <Checkbox value="D">D</Checkbox>
+        <Checkbox value="E">E</Checkbox>
+      </Checkbox.Group>
+    </div>
+  );
+
+  const price = (
+    <div className="list-dropdown">
+      <Checkbox.Group className="list-dropdown-group" style={{ width: '100%' }} onChange={onChange}>
+        <Checkbox value="A">Dưới 1,000,000₫</Checkbox>
+        <Checkbox value="B">1,000,001₫ - 2,000,000₫</Checkbox>
+        <Checkbox value="C">2,000,001₫ - 3,000,000₫</Checkbox>
+        <Checkbox value="D">3,000,001₫ - 4,000,000₫</Checkbox>
+        <Checkbox value="E">Trên 4,000,000₫</Checkbox>
+      </Checkbox.Group>
+    </div>
   );
 
   return (
     <div className="filterProducts">
-      <div className="filterProducts-container">
+      <div className="container">
         <div className="d-flex justify-content-between">
           <div className="filterProducts-filter">
-            <Dropdown overlay={menu}>
+            <Dropdown overlay={danhmuc}>
               <Space>
                 Danh mục
+                <DownOutlined />
+              </Space>
+            </Dropdown>
+            <Dropdown overlay={price} className="ms-3">
+              <Space>
+                Giá
                 <DownOutlined />
               </Space>
             </Dropdown>
