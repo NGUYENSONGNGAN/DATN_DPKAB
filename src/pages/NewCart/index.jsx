@@ -53,9 +53,11 @@ const Cart = () => {
                 </div>
 
                 <div className="cart-checkout text-center">
+                  <Link to='/checkouts'>
                   <button className="button-primary" type="submit">
                     Thanh toán
                   </button>
+                  </Link>
                   <Link className="cart-continue" to="/products">
                     Tiếp tục mua sắm
                   </Link>

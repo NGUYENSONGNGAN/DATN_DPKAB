@@ -14,6 +14,7 @@ import DetailProducts from '../pages/DetailProducts';
 import { useLocation } from 'react-router';
 import Cart from '../pages/NewCart';
 import { useCookies } from 'react-cookie';
+import CheckOuts from '../pages/Checkouts';
 const Router = () => {
   const location = useLocation();
 
@@ -30,6 +31,7 @@ const Router = () => {
         <Route path="/admin" element={<Admin />} />
         <Route path="/detailProduct/:id" element={<DetailProducts />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkouts" element={<CheckOuts/>} />
       </Routes>
       <Footer />
     </>
