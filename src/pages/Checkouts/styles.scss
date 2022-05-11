@@ -1,46 +1,118 @@
-.main{
+.main {
     padding-top: 150px;
-  overflow: hidden;
+    overflow: hidden;
 
-.logo-cus {
-    width: 100%;
-    padding: 15px 0;
-    text-align:center;
-    img {
-        max-height: 4.2857142857em
-    }
-}
+    .logo-cus {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
 
-.logo-text {
-    font-size: 25px;
-    font-weight: 500;
-    color: #333333;
-}
-.fieldset 
-{
-    .info_custom{
-    display: flex;
+        img {
+            max-height: 4.2857142857em
+        }
     }
-}
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root
-{
-    width: 100%;
-}
-.css-qmvhj5
-{
-    flex-direction: column;
 
-}
-.css-1869usk-MuiFormControl-root
-{
-    width: 100%;
-    padding-left: 0;
-    margin: 0;
-}
-@media (max-width: 767px) {
-    .banner Link {
-        display: block;
+    .logo-text {
+        font-size: 25px;
+        font-weight: 500;
+        color: #333333;
     }
-}
+
+    .fieldset {
+        .info_custom {
+            display: flex;
+        }
+    }
+
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+        width: 100%;
+    }
+
+    .css-qmvhj5 {
+        flex-direction: column;
+
+    }
+
+    .css-1869usk-MuiFormControl-root {
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .section-title {
+        margin-top: 20px;
+    }
+
+    .content-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 0 1px #d9d9d9;
+        border-radius: 4px;
+        background: #fff;
+        color: #737373;
+        overflow: hidden;
+
+        .radio-wrapper {
+            border-top: 1px solid #d9d9d9;
+
+            label {
+                display: flex;
+                padding: 1.3em;
+                cursor: pointer;
+                align-items: center;
+
+                .radio-input {
+                    margin-right: 10px;
+                }
+
+                .radio-content-input {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin: 0px 10px;
+                        margin-right: 10px;
+                        display: flex;
+                        align-self: center;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+        .step-footer {
+            margin: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .btn {
+                display: inline-block;
+                border-radius: 4px;
+                font-weight: 500;
+                padding: 10px 15px;
+                box-sizing: border-box;
+                text-align: center;
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                position: relative;
+                background: #338dbc;
+                color: white;
+            }
+        }
+    }
+
+
+
+
+
+
+
+    @media (max-width: 767px) {
+        .banner Link {
+            display: block;
+        }
+    }
 
 }
