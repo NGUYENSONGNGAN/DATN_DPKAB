@@ -15,6 +15,7 @@ import { useLocation } from 'react-router';
 import Cart from '../pages/NewCart';
 import { useCookies } from 'react-cookie';
 import CheckOuts from '../pages/Checkouts';
+import Payment from '../pages/Payment';
 const Router = () => {
   const location = useLocation();
 
@@ -32,6 +33,7 @@ const Router = () => {
         <Route path="/detailProduct/:id" element={<DetailProducts />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkouts" element={<CheckOuts/>} />
+        <Route path="/payment" element={<Payment/>} />
       </Routes>
       <Footer />
     </>

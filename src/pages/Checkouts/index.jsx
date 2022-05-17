@@ -188,7 +188,7 @@ function CheckOuts() {
                                 </label>
                             </div>
                             <div className="radio-wrapper content-box-row">
-                                <label className="radio-label" for="payment_method_id_1002364968">
+                                <label className="radio-label" htmlFor="payment_method_id_1002364968">
                                     <div className="radio-input payment-method-checkbox">
                                         <input type-id="1" id="payment_method_id_1002364968" className="input-radio" name="payment_method_id" type="radio" value="1002364968" />
                                     </div>
@@ -204,7 +204,7 @@ function CheckOuts() {
                                 </label>
                             </div>
                             <div className="radio-wrapper content-box-row">
-                                <label className="radio-label" for="payment_method_id_1002373494">
+                                <label className="radio-label" htmlFor="payment_method_id_1002373494">
                                     <div className="radio-input payment-method-checkbox">
                                         <input type-id="8" id="payment_method_id_1002373494" className="input-radio" name="payment_method_id" type="radio" value="1002373494" />
                                     </div>
@@ -220,13 +220,13 @@ function CheckOuts() {
                                 </label>
                             </div>
 
-                            <div class="step-footer">
-                                <Link class="step-footer-previous-link" to="/cart">
+                            <div className="step-footer">
+                                <Link className="step-footer-previous-link" to="/cart">
                                     Giỏ hàng
                                 </Link>
                                 <Link to='/payment'>
-                                <button type="submit" class="step-footer-continue-btn btn">
-                                    <span class="btn-content">Hoàn tất đơn hàng</span>
+                                <button type="submit" className="step-footer-continue-btn btn">
+                                    <span className="btn-content">Hoàn tất đơn hàng</span>
                                 </button></Link>
 
                             </div>
